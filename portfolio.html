@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.onscroll = function(){
+            scrollFunction();
+        }
+
+        function scrollFunction(){
+           if(document.body.scrollTop > 67 || document.documentElement.scrollTop > 67){
+                document.getElementById("navbar").style.background = "#111111";
+           }
+           else{
+            // document.getElementById("navbar").style.background = "#1f242d";
+            document.getElementById("navbar").style.background = "#111111";
+           }
+        }
+
+        function openMenu(){
+            var menu = document.getElementById('navbar_ul');
+            menu.classList.add('active');
+        }
+
+        function closeMenu(){
+            var menu = document.getElementById('navbar_ul');
+            menu.classList.remove('active');
+        }
+        // $('#menu-btn').click(function () {
+        //     $('#navbar #navbar_ul').addClass('active')
+        // });
+        // $('#menu-close').click(function () {
+        //     $('#navbar #navbar_ul').removeClass('active')
+        // });
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar1" id="navbar">
+            <h1>Mayank Omar <span>(portfolio)</span></h1>
+            <ul id="navbar_ul" >
+                <i id="menu-close" onclick = "closeMenu()" class="fa-solid fa-xmark"></i>
+                <li><a  class = "active" href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#service">My Service</a></li>
+                <li><a href="#work">My work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <img onclick="openMenu()" src="img/menu.png" id = "menu-btn" alt="">
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-container">
+            <div class="home-details">
+                <h2>Hello,<span>Namste!</span></h2>
+                <h3>It's Me,<br><span style="font-size: 30px;">Mayank Omar</span></h3>
+                <h2>And I'm a <span>Full Stack Web Developer</span></h2>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <button class="btn">Download CV</button>
+            </div>
+            <div class="home-img">
+                <img src="img/dp1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <h1>About <span>Me</span></h1>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="img/dp1.jpg" alt="">
+            </div>
+            <div class="about-details">
+                <h2>Developer & Designer</h2>
+                <hr>
+                <p>I'm a Full Stack Web Developer. I Can Create Responsive Website with more Inactiveness</p>
+                <p>A responsive design makes Your websites accesssible to all users, regardless to their device.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill -->
+    <section class="skills" id="skills">
+        <h1>My <span>Skills</span></h1>
+        <h2>Technical Skills</h2>
+        <div class="skill-container">
+            <div class="s1">
+                <h3>HTML</h3>
+                <div class="progress-line"><span class="html"></span></div>
+            </div>
+            <div class="s1">
+                <h3>CSS</h3>
+                <div class="progress-line"><span class="css"></span></div>
+            </div>
+            <div class="s1">
+                <h3>Javascript</h3>
+                <div class="progress-line"><span class="js"></span></div>
+            </div>
+            <div class="s1">
+                <h3>PHP</h3>
+                <div class="progress-line"><span class="php"></span></div>
+            </div>
+            <div class="s1">
+                <h3>Python</h3>
+                <div class="progress-line"><span class="python"></span></div>
+            </div>
+            <div class="s1">
+                <h3>C language</h3>
+                <div class="progress-line"><span class="c"></span></div>
+            </div>
+            <div class="s1">
+                <h3>Java</h3>
+                <div class="progress-line"><span class="java"></span></div>
+            </div>
+        </div>
+        <h2>Educational Skills</h2>
+        <div class="edu">
+            <li style="list-style: circle;">B.tech</li>
+            <p>In Current Time,I am pursuing B.tech from computer science. And I have Completed My 3rd year of this course with gaining good technical knowledge  </p>
+            <li style="list-style: circle;">12th</li>
+            <p>I have completed my 12th standared on 2020 with 83%g rad</p>
+            <li style="list-style: circle;">10th</li>
+            <p>I have completed my 10th standared on 2018 with 90% grad</p>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section class="service" id="service">
+        <h1>My <span>Service</span></h1>
+        <div class="Myservice">
+            <div class="ser">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Web Application </h2>
+                <p>I am a full stack web developer. I also make the reponsive and interactive website and also animation to it which make it more convinent to user. I provide the full responsive and different types of website like Educational, e-commerce and portfolio websites. </p>
+                <a href="">Read More</a>
+            </div>
+            <div class="ser">
+                <i class="fa-solid fa-star"></i>
+                <h2>Web Support And maintenace</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea beatae facilis aliquam molestiae
+                    et cumque praesentium delectus, voluptas dolorum architecto quia ratione deleniti laboriosam, at
+                    magnam!</p>
+                <a href="">Read More</a>
+            </div>
+            <div class="ser">
+                <i class="fa-solid fa-star"></i>
+                <h2>PHP development</h2>
+                <p>Php is a backend Language for Web Development. I have A good knowledge to develop back-end components, to connect the application with other web services. I ensures stability and performance of the code which requires great attention to detail.... </p>
+                <a href="">Read More</a>
+            </div>
+            <div class="ser">
+                <i class="fa-solid fa-star"></i>
+                <h2>uI design</h2>
+                <p>UI is the most important aspect of any web application because this provide beauti of webpage. On the basis of UI design user interact with your website and get benefit....</p>
+                <a href="">Read More</a>
+            </div>
+            <div class="ser">
+                <i class="fa-solid fa-star"></i>
+                <h2>Database Management Service</h2>
+                <p>I have ability to analyze the data needs of a required software to produce an effective database system. I have also the ability to run performance of dababase for it's proper database I have already work with Mysql Database.....</p>
+                <a href="">Read More</a>
+            </div>
+            <div class="ser">
+                <i class="fa-solid fa-star"></i>
+                <h2>Web Hosting</h2>
+                <p>In most of the cases it is happened that mostly people develop his web application but he is not able to apload his/her web application on online mode and no idea about domain name and hosting of website....</p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- project -->
+    <section class="project" id="project">
+        <h1>My <span>Project</span></h1>
+        <div class="pro-content">
+            <img src="img/p1.png" alt="">
+            <!-- <img src="img/p2.png" alt=""> -->
+        </div>
+    </section>
+
+    <!-- work -->
+    <section class="work" id="work">
+        <h1>My <span>Work</span></h1>
+        <div class="field">
+            <div class="img1">
+                <h3>As a developer</h3>
+                <img src="img/fe1.png" alt="">
+            </div>
+            <div class="img2">
+                <h3>NGO Member</h3>
+                <img src="img/trust (2).png" alt="">
+            </div>
+            <div class="img3">
+                <h3>As a Supporter</h3>
+                <img src="img/trust (3).png" alt="">
+            </div>
+        </div>
+    </section>
+ 
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <hr>
+        <div class="contact-details">
+            <div class="cont">
+                <h2 class="heading">Contact <span>Me!</span></h2>
+                <div class="mycontact">
+                    <h3><i class="fa-solid fa-paper-plane"></i>mayankomar692@gmail.com</h3>
+                    <h3><i class="fa-solid fa-phone"></i>9336207509</h3>
+                </div>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Enter Your Full Name">
+                    <input type="email" name="" id="" placeholder="Email Address">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" name="" id="msg" placeholder="Message">
+                </div>
+                <div class="button">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer >
+        <div class="name">
+            <h2>Developed By OM Tech</h2>
+        </div>
+        <div class="copyright">
+            <h2>Copyright <i class="fa-solid fa-copyright"></i> By Mayank Omar</h2>
+        </div>
+        <div class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- rgb(116,212,195) -->
+<!-- rgb(226,60,171) -->
